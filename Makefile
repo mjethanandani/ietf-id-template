@@ -21,5 +21,8 @@ debug:
 	--mount type=bind,src="$(PWD)",dst=/app \
         -it $(image) bash
 
+tag:
+	git push origin --tags
+
 clean:
 	make -C draft clean
