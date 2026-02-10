@@ -24,9 +24,21 @@ The repository consists of the following
 # Suggested workflow
 ## Create a clone
 
+### Cloning the repositry
+
 To use this repository, first clone it using the command
 
 	`git clone https://github.com/mjethanandani/ietf-id-template.git`
+
+### Rename the repository
+
+The repository should be renamed to match the work that will be done. This can be done by just renaming the folder 'ietf-id-template'.
+
+### Initialize the repository
+
+The repository should be initialized to match the new name for the repository. Execute the following command in the repository:
+
+	`rm -rf .git; git init`
 
 ## Create a branch for the version of the draft
 
