@@ -22,21 +22,11 @@ The repository consists of the following
 - draft/draft-rfcxml-general-template-annotated.xml
 
 # Suggested workflow
-## Create a clone
+## Create a copy of the repository
 
-### Cloning the repositry
+### Using this template
 
-To use this repository, ckick on "Use this template" button near to top right.
-
-### Rename the repository
-
-The repository should be renamed to match the work that will be done. This can be done by just renaming the folder 'ietf-id-template'.
-
-### Initialize the repository
-
-The repository should be initialized to match the new name for the repository. Execute the following command in the repository:
-
-	`rm -rf .git; git init`
+To use this repository, click on "Use this template" button near to top right, and in the drop down menu select "Create a new repository". It will allow you to rename the repository to what you want, while still copying all the files and directories over.
 
 ## Create a branch for the version of the draft
 
