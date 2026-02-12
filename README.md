@@ -26,9 +26,7 @@ The repository consists of the following
 
 ### Cloning the repositry
 
-To use this repository, first clone it using the command
-
-	`git clone https://github.com/mjethanandani/ietf-id-template.git`
+To use this repository, ckick on "Use this template" button near to top right.
 
 ### Rename the repository
 
