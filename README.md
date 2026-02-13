@@ -60,6 +60,10 @@ Or type the following command to push all tags. Git will ignore duplicate tags:
 
 	`git push origin --tags`
 	
+## Naming of the draft
+
+As mentioned already, the 'git tag' command tells make what version to build. To do that right, the name of the draft in the XML file (docName under <rfc> and 'title' under <seriesInfo>, should be called the name of the draft followed by the word 'latest'. For example, if the draft name is draft-xxx-yyy-zzz, the both the variables should say 'draft-xxx-yyy-zzz-latest'. Make will replace latest with the version that the draft needs to be built with.
+
 ## Building the draft
 
 To build the draft, type make in the root of the repository
