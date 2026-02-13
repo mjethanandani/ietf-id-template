@@ -42,7 +42,7 @@ Create a branch off of the 'master' branch that matches the version of the draft
 
 	`git checkout -b v01`
 	
-Push the branch to the remote site and follow the steps labeled "Making it the default branch" below for making it the default branch. 
+Push the branch to the remote site and follow the steps labeled [Making it the default branch](#make-it-the-default-branch) below for making it the default branch. 
 
     `git push --set-upstream origin v01`
 
