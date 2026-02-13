@@ -36,13 +36,17 @@ Create a branch off of the 'master' branch that matches the version of the draft
 
 	`git checkout -b v01`
 	
-However, keep this branch "clean", as in do not make changes in the branch directly. Instead, allow PR to update the branch.
+Push the branch to the remote site and follow the steps labeled "Making it the default branch" below for making it the default branch. 
+
+    `git push -u origin v01`
+
+However, keep this branch "clean", as in do not make changes in the branch directly. Instead, allow PR to update the branch. To do that, create "issue branches" off of the new branch you have created. For example, if you create an issue #1, to update the name of the draft in the XML file, create a branch issue-1 and do your work there.
 
 Do this for every version of the draft.
 
 ### Make it the default branch
 
-In the GitHub UI for the repository, as admin, set the branch you have created as the default branch in the Settings (for the repository) menu. Update this every time a new branch is created for a new version of the branch.
+In the GitHub UI for the repository, as admin, set the branch you have created, e.g., v01, as the default branch in the Settings (for the repository) menu. Update this every time a new branch is created for a new version of the draft.
 	
 ### Create a tag
 
