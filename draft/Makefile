@@ -52,6 +52,7 @@ $(next).xml: $(draft).xml
 	../src/insert-figures.sh $@ > tmp; mv tmp $@
 
 	-mkdir -p ../bin
+	-ln -s /app/yang-parameters ../bin/yang-parameters 
 
 .INTERMEDIATE: $(draft).xml
 %.xml: %.md

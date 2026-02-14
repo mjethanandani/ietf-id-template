@@ -1,4 +1,17 @@
 import os
+import sys
+
+YANG_DIR = os.path.join(os.path.dirname(__file__), "yang")
+
+
+def yang_dir_has_yang_files():
+    if not os.path.isdir(YANG_DIR):
+        return False
+    return any(f.endswith(".yang") for f in os.listdir(YANG_DIR))
+
+
+if not yang_dir_has_yang_files():
+    sys.exit(0)
 
 list_of_ietf_models =\
 [  ["ietf-if-extensions", "draft-ietf-netmod-intf-ext-yang", "18"],

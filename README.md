@@ -30,7 +30,9 @@ To use this repository, click on "Use this template" button near to top right, a
 
 ## Rename or copy a draft
 
-The template includes an XML file for the draft in the draft folder. Rename that file to match the name of the draft. The 'make' command uses the name of this file to determine the names of the .html, .txt files.
+The template includes an XML file for the draft in the draft folder. Rename that file to match the name of the draft. The 'make' command uses the name of this file to determine the names of the .html, .txt files. Something like
+
+	`git mv draft/draft-rfcxml-general-template-annotated.xml draft/draft-xxx-yyy-zzz.xml`
 
 After renaming, make sure to update the name of the draft inside the XML file also. See [Naming of the draft](#naming-of-the-draft).
 
@@ -42,7 +44,7 @@ Create a branch off of the 'master' branch that matches the version of the draft
 
 	`git checkout -b v01`
 	
-Push the branch to the remote site and follow the steps labeled [Making it the default branch](#make-it-the-default-branch) below for making it the default branch. 
+Push the branch to the remote site and follow the steps labeled [Make it the default branch](#make-it-the-default-branch) below for making it the default branch. 
 
     `git push --set-upstream origin v01`
 
@@ -72,7 +74,7 @@ Or type the following command to push all tags. Git will ignore duplicate tags:
 	
 ## Naming of the draft
 
-As mentioned already, the 'git tag' command tells make what version to build. To do that right, the name of the draft in the XML file (docName under &lt;rfc&gt; and value under &lt;seriesInfo&gt;) should be called the name of the draft followed by the word 'latest'. For example, if the draft name is draft-xxx-yyy-zzz, the both the variables should say 'draft-xxx-yyy-zzz-latest'. Make will replace latest with the version that the draft needs to be built with.
+As mentioned already, the 'git tag' command tells make what version to build. To do that right, the name of the draft in the XML file (docName under &lt;rfc&gt; and value under &lt;seriesInfo&gt if that line exists;) should be called the name of the draft followed by the word 'latest'. For example, if the draft name is draft-xxx-yyy-zzz, the both the variables should say 'draft-xxx-yyy-zzz-latest'. Make will replace latest with the version that the draft needs to be built with.
 
 ## Building the draft
 
