@@ -88,4 +88,4 @@ Use the Issues menu in GitHub to keep track of issues that need to be addressed 
 
 ## Publishing the draft
 
-Once the draft is published, that version of the branch should be collapsed into the 'master' branch, and the above steps to 'Create a branch for the version of the draft' should be followed.
+Once the draft is published, that version of the branch should be collapsed into the 'master' branch, and the above steps to [Create a branch for the version of the draft](#create-a-branch-for-the-version-of-the-draft) should be followed.
