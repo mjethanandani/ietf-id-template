@@ -7,6 +7,11 @@ if [ ! -d ../bin/yang-parameters ]; then
    rsync -avz --delete rsync.iana.org::assignments/yang-parameters ../bin/
 fi
 
+if [ ! -f ../bin/ietf-*\@$(date +%Y-%m-%d).yang ]; then
+    echo "No files found matching ../bin/ietf-*@$(date +%Y-%m-%d).yang"
+    exit 0
+fi
+
 for i in ../bin/ietf-*\@$(date +%Y-%m-%d).yang
 do
     name=$(echo $i | cut -f 1-3 -d '.')

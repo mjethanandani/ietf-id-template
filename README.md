@@ -58,6 +58,8 @@ In the GitHub UI for the repository, as admin, set the branch you have created, 
 	
 ### Create a tag
 
+If this is the -00 version of the draft, skip this step.
+
 Next, create a git tag for the draft-xxx-yyy-zzz.xml as follows:
 
 	`git tag draft-xxx-yyy-zzz-00`

@@ -25,4 +25,5 @@ tag:
 	git push origin --tags
 
 clean:
+	-docker rm $$(docker ps -a -q -f status=exited) 2>/dev/null || true
 	make -C draft clean
